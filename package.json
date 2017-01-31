@@ -1,0 +1,31 @@
+{
+  "name": "alexa-nexa-skill",
+  "version": "0.0.1",
+  "description": "Simple alexa skill to turn on / off devices with a tellstick.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --exec babel-node --presets es2015,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samuelgh/alexa-nexa-skill.git"
+  },
+  "author": "samuelgh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samuelgh/alexa-nexa-skill/issues"
+  },
+  "homepage": "https://github.com/samuelgh/alexa-nexa-skill#readme",
+  "dependencies": {
+    "alexa-app-server": "^2.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^2.2.1"
+  }
+}
