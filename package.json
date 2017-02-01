@@ -1,6 +1,6 @@
 {
   "name": "alexa-nexa-skill",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Simple alexa skill to turn on / off devices with a tellstick.",
   "engines": {
     "node": "6.6.0",
