@@ -10,7 +10,10 @@ app.intent('TurnOnIntent', 'Light on', () => {
   return 'Your wish is my command';
 });
 
-app.createServer().start(() => {
+const config = {
+  port: process.env.PORT || 4000,
+};
+app.createServer(config).start(() => {
   app.saveSpeechAssets();
   console.log('Server started');
 });
