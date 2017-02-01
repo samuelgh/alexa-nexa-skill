@@ -16,7 +16,10 @@ app.intent('TurnOnIntent', 'Light on', function () {
   return 'Your wish is my command';
 });
 
-app.createServer().start(function () {
+var config = {
+  port: process.env.PORT || 4000
+};
+app.createServer(config).start(function () {
   app.saveSpeechAssets();
   console.log('Server started');
 });
