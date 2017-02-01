@@ -7,7 +7,13 @@ app.intent('HelloIntent', 'Hello', () => {
 
 
 app.intent('TurnOnIntent', 'Light on', () => {
-  return 'Your wish is my command';
+  return {
+    text: 'Your wish is my command',
+    card: {
+      title: 'Light on',
+      content: 'Your wish is my command'
+    }
+  };
 });
 
 const config = {
