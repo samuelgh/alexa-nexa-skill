@@ -1,1 +1,2 @@
 HelloIntent Hello
+TurnOnIntent Light on
